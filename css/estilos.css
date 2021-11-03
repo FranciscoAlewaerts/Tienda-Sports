@@ -1,0 +1,361 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62,5;
+}
+
+.logoWeb{
+    height: 10%;
+    width: 10%;
+    margin-left: 5px;
+    margin-top: 5px;
+    
+}
+
+table{
+    color: #000000;
+}
+
+body{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-image: url(../Multimedia/fondo5.png);
+}
+.lmarcas{
+    height: 15%;
+    width: 15%;
+    position: relative;
+    top: 45%;
+}
+
+
+.lmarcas2{
+    height: 15%;
+    width: 15%;
+    position: relative;
+    top: 45%;
+    padding-bottom: 40px;
+    }
+
+
+.imProduct{
+    width: 150px;
+    height: 140px;
+    display: flex;
+    align-items: stretch;
+    }
+
+.title{
+    text-align: center;
+    letter-spacing: normal;
+    word-spacing: normal;
+    color:#52796f;
+    margin-bottom: 20px;
+}
+header{
+    position: sticky;
+    top: 0px;
+    z-index: 3;
+}
+.navegador{
+        background-image: url(../Multimedia/nav2.png);
+        background-repeat: repeat;
+        
+}
+nav a:hover{
+    color: rgb(4, 0, 252);
+    
+}
+
+.txtNav:hover{
+    font-size: 120%;
+}
+
+.navegador li{
+    display: inline-block;
+    padding: 0 10px 20px;
+}
+.subtitle{
+    color:#354f52;
+    text-align: center;
+    font-size: 180%;
+}
+
+h3{
+    color:#354f52;
+    text-align: center;
+    font-size: 120%;
+}
+
+.descript{
+    color:#354f52;
+    font-size: 120%;
+    margin-top: 15px;
+}
+
+.price{
+    font-size: 120%;
+}
+
+.producto{
+    background-image: url(../Multimedia/fondo5.png);
+    display: flex;
+    flex-direction: column;
+    justify-content:stretch;
+    align-items: center;
+    margin: 10px 5px;
+    padding: 10px;
+    border: solid 1px black;
+    border-radius: 10px;
+    border-bottom: solid 5px black;
+    height: 320px;
+    width: 30%;
+}
+
+.producto:hover{
+    transform: scale(1.1,1.1);
+}
+
+.prTab{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 20px 10px 20px 0px;
+    padding: 10px;
+    border: solid 5px black;
+    border-radius: 20px;
+}
+
+.prTab2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 20px 10px 20px 0px;
+    padding: 10px;
+    border: solid 5px black;
+    width: 100%;
+    height: 100%;
+}
+.tabMarcas{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+    margin: 20px 0 20px 0;
+    /* padding: 10px; */
+}
+
+.formContact{
+    margin: 50px 50px 50px 50px;
+    padding: 50px;
+    border: solid 5px black;
+    border-radius: 10px;
+}
+
+.tablaHombre{
+    display: flex;
+    justify-content: center;
+    margin: 50px 50px 50px 50px;
+    padding: 50px;
+    border: solid 5px black;
+    border-radius: 10px;
+}
+
+.mainHombre{
+    display: flex;
+    justify-content: center;
+}
+
+footer{
+    text-align: center;
+    letter-spacing: normal;
+    word-spacing: normal;
+    color: #52796f;
+    background-image: url(../Multimedia/nav2.png);
+    background-repeat: repeat;
+}
+
+.publicidad{
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
+
+a{
+    color:#cad2c5;
+    text-align: left;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.parrafo{
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-size:  20px;
+}
+
+.mapa{
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+
+}
+
+.pSelec{
+        text-align: center;
+        letter-spacing: normal;
+        word-spacing: normal;
+        color:#52796f;
+        margin-top: 50px;
+        font-size: 140%;
+}
+
+.imgHombre{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+
+}
+
+
+
+.txtFoot{
+    font-size: 100%;
+    text-decoration: none;
+    color: white;
+}
+
+.txtNav{
+    font-size: 100%;
+    text-decoration: none;
+    color: white
+
+}
+.txtNav :hover{
+    transform: scale(2,1);
+}
+
+.categorias{
+    color:#354f52;
+    text-align:start;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 20px;
+    margin-left: 12px;
+    
+}
+
+/* GRIDS */
+
+.secProductos{
+    display: grid;
+    grid-template-columns: 0.3fr 2fr;
+    grid-template-rows: 2fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "categorias prTab";
+    align-items: start;
+    justify-content: center;
+}
+
+
+.categorias{ 
+    grid-area: categorias;
+}
+
+.prTab{ 
+    grid-area: prTab; 
+}
+
+
+@media only screen and (max-width: 768px){
+    .body__index{
+        display: grid; 
+        grid-template-columns: 1fr 1fr 1fr; 
+        grid-template-rows: 0.1fr 2fr 0.5fr 0.1fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+        "header header header"
+        "main main main"
+        "main main main"
+        "footer footer footer"; 
+    }
+
+}    
+
+@media only screen and (max-width: 1024px){
+    .body__index{
+        display: grid; 
+        grid-template-columns: 1fr 1fr 1fr; 
+        grid-template-rows: 0.1fr 2fr 0.5fr 0.1fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+        "header header header"
+        "main main main"
+        "main main main"
+        "footer footer footer"; 
+    }
+
+    .lmarcas2{
+        padding-bottom: 20px;
+    }
+}    
+
+@media only screen and (max-width: 767px){
+    .body__index{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr 8fr 1fr 0.3fr;
+        gap: 0px 0px;
+        grid-auto-flow: column;
+        grid-template-areas:
+        "header"
+        "main"
+        "main"
+        "main"
+        "footer"; 
+    }
+
+    .secProductos{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.3fr 8fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+        "categorias"
+        "prTab";
+        align-items:center;
+        justify-content: center;
+    }
+
+    .prTab{
+        margin: 20px 10px 20px 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: stretch;
+        align-items: center;
+    }
+
+    .producto{
+        width: 200px;
+        height: 200px;
+    }
+
+    .lmarcas2{
+        padding-bottom: 10px;
+    }
+}    
+
+header { grid-area: header; }
+main { grid-area: main; }
+.tabMarcas { grid-area: tabMarcas; }
+footer { grid-area: footer; }
+
