@@ -30,40 +30,24 @@
 
     <main>
         <h1>CONTACTO</h1>
-        <form action="" class="formContact">
-            <fieldset class="formContact">
-                <fieldset>
-            <div>
-                <label for="nombre_y_apellido">Nombre:</label>
-                <input type="text" placeholder="Ingrese su nombre y apellido" name="nombre_y_apellido">
+        <form class="formContact">
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">NOMBRE</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
             </div>
-            <div>
-                <label for="Genero">Genero:</label>
-                <select name="Genero" id="Genero">
-                    <option value="Masculino">Masculino</option>
-                    <option value="Femenino">Femenino</option>
-                    <option value="otros">Otro</option>
-                </select>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">EMAIL</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
             </div>
-            <div>
-            <label for="email">Email:</label>
-            <input type="email" placeholder="Ingrese su email" name="email">
-            </div>
-            </fieldset>
-            <fieldset>
-            <div>
-                <label for="mensaje">Mensaje:</label>
-                <textarea name="mensaje" id="mensaje" cols="60" rows="10" placeholder="Ingrese el mensaje"></textarea>
-            </div>       
-                <input type="submit">
-                <input type="reset">
-            </fieldset>
-            <fieldset>
-            <div>
-                <input type="checkbox">¿Desea recibir las ultimas ofertas a su correo?
-            </div>
-            </fieldset>
-            </fieldset>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">MENSAJE</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">¿Desea recibir las ultimas ofertas a su correo? </label>
+              </div>
+              <button type="submit" class="btn btn-primary">ENVIAR</button>
         </form>
         <footer>
             <ul class="nav justify-content-center">
