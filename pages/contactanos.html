@@ -15,22 +15,46 @@
 
 </head>
 <body class="title animate__animated animate__fadeInDown">
-    <header>
-        <nav>
-            <ul class="navegador">
-                <img src="../Multimedia/logoweb.png" alt="" class="logoWeb">   
-                <li><a href="../index.html" class="txtNav">HOME</a></li>
-                <li> <a href="../pages/hombre.html" class="txtNav ">HOMBRE</a></li>
-                <li> <a href="../pages/mujer.html" class="txtNav ">MUJER</a></li>
-                <li> <a href="../pages/sobre_nosotros.html" class="txtNav">SOBRE NOSOTROS</a></li>
-                <li><a href="../pages/contactanos.html" class="txtNav">CONTACTANOS</a></li>
+  <header>
+    <nav class="navbar navbar-dark navbar-expand-lg navegador">
+        <a href="../index.html"><img src="../Multimedia/logoweb.png" alt="" class="logoWeb1"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-start justify-content-center" tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel">
+            <div class="offcanvas-header">
+                <img src="../Multimedia/logoweb.png" alt="" class="logoWeb">
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav flex-grow-1 pe-3" style="margin-right: 60px">
+                <li class="nav-item">
+                    <a class="nav-link active borderNav" aria-current="page" href="../index.html">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../pages/hombre.html">HOMBRE</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../pages/mujer.html">MUJER</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../pages/sobre_nosotros.html">SOBRE NOSOTROS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../pages/contactanos.html">CONTACTANOS</a>
+                </li>
             </ul>
-        </nav> 
-    </header>
+            
+            </div>
+            </div>
+        </div>
+    </nav>
+</header>
 
     <main>
-        <h1>CONTACTO</h1>
+        
         <form class="formContact">
+          <h1>CONTACTO</h1>
             <div class="mb-3">
               <label for="exampleInputEmail1" class="form-label">NOMBRE</label>
               <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
@@ -47,24 +71,25 @@
                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
                 <label class="form-check-label" for="exampleCheck1">¿Desea recibir las ultimas ofertas a su correo? </label>
               </div>
-              <button type="submit" class="btn btn-primary">ENVIAR</button>
+              <button type="submit" class="btn btn-dark btn-primary">ENVIAR</button>
         </form>
         <footer>
-            <ul class="nav justify-content-center">
-                <li class="nav-item txtFoot">
-                    <a class="nav-link" href="#">INSTAGRAM</a>
-                  </li>
-                <li class="nav-item txtFoot">
-                  <a class="nav-link " href="#">FACEBOOK</a>
-                </li>
-                <li class="nav-item txtFoot">
-                  <a class="nav-link" href="#">TWITTER</a>
-                </li>
-                <li class="nav-item txtFoot">
+          <ul class="nav justify-content-center">
+              <li class="nav-item txtFoot">
+                  <a class="nav-link" href="#"><img src="Multimedia/instagram.png" alt=""></a>
+                  
+              </li>
+              <li class="nav-item txtFoot">
+                  <a class="nav-link " href="#"><img src="Multimedia/facebook.png" alt=""></a>
+              </li>
+              <li class="nav-item txtFoot">
+                  <a class="nav-link" href="#"><img src="Multimedia/twitter.png" alt=""></a>
+              </li>
+              <li class="nav-item txtFoot">
                   <a class="nav-link disabled">DERECHOS RESERVADOS &copy;</a>
-                </li>
-              </ul>
-        </footer>
+              </li>
+          </ul>
+      </footer>
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
