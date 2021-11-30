@@ -14,15 +14,38 @@
 </head>
 <body class="title animate__animated animate__fadeInDown body__index ">
     <header>
-        <nav>
-            <ul class="navegador">
-                <img src="Multimedia/logoweb.png" alt="" class="logoWeb">   
-                <li><a href="index.html" class="txtNav">HOME</a></li>
-                <li> <a href="pages/hombre.html" class="txtNav ">HOMBRE</a></li>
-                <li> <a href="pages/mujer.html" class="txtNav ">MUJER</a></li>
-                <li> <a href="pages/sobre_nosotros.html" class="txtNav">SOBRE NOSOTROS</a></li>
-                <li><a href="pages/contactanos.html" class="txtNav">CONTACTANOS</a></li>
-            </ul>
+        <nav class="navbar navbar-dark navbar-expand-lg navegador">
+            <a href="index.html"><img src="Multimedia/logoweb.png" alt="" class="logoWeb1"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-start justify-content-center" tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel">
+                <div class="offcanvas-header">
+                    <img src="Multimedia/logoweb.png" alt="" class="logoWeb">
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav flex-grow-1 pe-3" style="margin-right: 60px">
+                    <li class="nav-item">
+                        <a class="nav-link active borderNav" aria-current="page" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="pages/hombre.html">HOMBRE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="pages/mujer.html">MUJER</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="pages/sobre_nosotros.html">SOBRE NOSOTROS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="pages/contactanos.html">CONTACTANOS</a>
+                    </li>
+                </ul>
+                
+                </div>
+                </div>
+            </div>
         </nav>
     </header>
 
@@ -34,12 +57,12 @@
         
         <div class="secProductos">
             <div class="categorias">
-            <form action="">
-                <fieldset>
+            <form action="" class="formis">
+                <fieldset class="formis">
                     <div>
                         <p><strong> CATEGORIAS </strong ></p>
                         <label for="Marca">Marca:</label>
-                        <br><select name="Marca" id="Marca">
+                        <br class="none"><select name="Marca" id="Marca">
                             <option value="Nike">Nike</option>
                             <option value="Adidas">Adidas</option>
                             <option value="underArmor">Under Armor</option>
@@ -48,7 +71,7 @@
                     </div>
                     <div>
                         <label for="Calzado">Calzado:</label>
-                        <br><select name="calzado" id="calzado">
+                        <br class="none"><select name="calzado" id="calzado">
                             <option value="Snickers">Snickers</option>
                             <option value="Running">Running</option>
                             <option value="Botines">Botines</option>
@@ -56,7 +79,7 @@
                     </div>
                     <div>
                         <label for="Indumentaria">Indumentaria:</label>
-                        <br><select name="Indumentaria" id="Indumentaria">
+                        <br class="none"><select name="Indumentaria" id="Indumentaria">
                             <option value="camperas">Camperas</option>
                             <option value="remeras">Remeras</option>
                             <option value="shorts">Shorts</option>
@@ -65,7 +88,7 @@
                     </div>
                     <div>
                         <label for="Accesorios">Accesorios</label>
-                        <select name="Accesorios" id="Accesorios">
+                        <br class="none"><select name="Accesorios" id="Accesorios">
                             <option value="mochilas_y_bolsos">Mochilas y Bolsos</option>
                             <option value="pelotas">Pelotas</option>
                             <option value="Gorras">Gorras</option>
@@ -319,23 +342,22 @@
     <footer>
         <ul class="nav justify-content-center">
             <li class="nav-item txtFoot">
-                <a class="nav-link" href="#">INSTAGRAM</a>
-              </li>
-            <li class="nav-item txtFoot">
-              <a class="nav-link " href="#">FACEBOOK</a>
+                <a class="nav-link" href="#"><img src="Multimedia/instagram.png" alt=""></a>
+                
             </li>
             <li class="nav-item txtFoot">
-              <a class="nav-link" href="#">TWITTER</a>
+                <a class="nav-link " href="#"><img src="Multimedia/facebook.png" alt=""></a>
             </li>
             <li class="nav-item txtFoot">
-              <a class="nav-link disabled">DERECHOS RESERVADOS &copy;</a>
+                <a class="nav-link" href="#"><img src="Multimedia/twitter.png" alt=""></a>
             </li>
-          </ul>
+            <li class="nav-item txtFoot">
+                <a class="nav-link disabled">DERECHOS RESERVADOS &copy;</a>
+            </li>
+        </ul>
     </footer>
 
-        
-       
-    
+
     
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
